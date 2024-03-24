@@ -85,13 +85,40 @@ pdftitle={\@title},
 pdfauthor={\@author},
 pdfsubject={中国人民大学学位论文}}
 }
+
 \setmainfont{Times New Roman}
 \setsansfont{Arial}
 \setmonofont{Courier New}
 \xeCJKsetup{AutoFakeSlant={true}}
-\setCJKmainfont{SimSun}
-\setCJKsansfont{SimHei}
-\setCJKmonofont{FangSong}
+% \setCJKfamilyfont{SimSun}{fonts/simsun.ttf}
+% \setCJKfamilyfont{SimHei}{fonts/simhei.ttf}
+% \setCJKfamilyfont{FangSong}{fonts/fangsong.ttf}
+
+% % 设置默认的中文字体族
+% \newcommand{\zhsong}{\CJKfamily{SimSun}}
+% \newcommand{\zhhei}{\CJKfamily{SimHei}}
+% \newcommand{\zhfs}{\CJKfamily{FangSong}}
+
+% \setCJKfamilyfont{SimSum}{simsun.ttf}
+% \setCJKfamilyfont{SimHei}{fonts/simhei.ttf}
+% \setCJKfamilyfont{FangSong}{fonts/fangsong.ttf}
+% \setCJKfamilyfont{SimSun}{SimSum-Regular.ttf}
+% \setCJKfamilyfont{SimHei}{SimHei-Regular.ttf}
+% \setCJKfamilyfont{FangSong}{fangsong.ttf}
+% 设置默认的中文字体族
+% \newcommand{\zhsong}{\CJKfamily{SimSun}}
+% \newcommand{\zhhei}{\CJKfamily{SimHei}}
+% \newcommand{\zhfs}{\CJKfamily{FangSong}}
+
+\setCJKmainfont{simsun.ttf}
+\setCJKsansfont{simhei.ttf}
+\setCJKmonofont{fangsong.ttf}
+% \setCJKmainfont{zhsong}
+% \setCJKsansfont{zhhei}
+% \setCJKmonofont{zhfs}
+% \setCJKmainfont{SimSun}
+% \setCJKsansfont{SimHei}
+% \setCJKmonofont{FangSong}
 \newcommand{\rowspace}{%
 \setlength{\lineskiplimit}{2.625bp}
 \setlength{\lineskip}{2.625bp}
@@ -375,7 +402,7 @@ subsubsection/numberformat = \bf\zihao{5}
 \definecolor{rucgreen}{rgb}{0.333,0.608,0.627}
 \definecolor{rucwhite}{rgb}{0.999,0.999,0.999}
 \definecolor{rucbalck}{rgb}{0,0,0}
-\setCJKfamilyfont{X}{FZXBSJW--GB1-0}
+\setCJKfamilyfont{X}{FZXBSJW.ttf}
 \newcommand{\X}{\CJKfamily{X}}
 \newcommand{\cover}{
 \newgeometry{top=0mm,left=20mm,bottom=0mm,right=0mm,voffset=10mm,columnsep=5.5cm}

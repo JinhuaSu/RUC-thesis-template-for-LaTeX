@@ -6,7 +6,7 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-\documentclass[a4paper,bachelor]{ructhesis}
+\documentclass[a4paper,master]{ructhesis}
 
 %自添宏包
 \usepackage{skak}%国际象棋
@@ -14,24 +14,38 @@
 \usepackage{chemfig}%化学式
 \usepackage{epigraph}
 \usetikzlibrary{trees}
+\usepackage[utf8]{inputenc}
+\usepackage{ctex}
+\usepackage{xeCJK}
 
+% \usepackage{fontspec}
 
+% \setmainfont{SimHei}[
+%     Path=./fonts/simhei/,
+%     Extension = .ttf,
+%     UprightFont=*-Regular,
+% ]
 
+% \setmainfont{SimSum}[
+%     Path=./fonts/simsum/,
+%     Extension = .ttf,
+%     UprightFont=*-Regular,
+% ]
 %将封面信息补全
 
 %文头
-\sign{中国人民大学本科毕业论文}
-%\sign{硕士学位论文}
+% \sign{中国人民大学本科毕业论文}
+\sign{硕士学位论文}
 %\sign{博士学位论文}
 
 % 以下信息本科研究生都需要补全
-\title{挑灯看剑，笑傲江湖} %论文题名，论文的正标题
-\author{令狐冲} %论文作者姓名
-\school{华山派} %论文作者所在学院的全称
-\field{\ 剑宗系调参专业} %论文作者所学专业的全称；相关专业名称过长的请在文字前添加命令\ziju{-0.15}
-\studentid{2020202000} %论文作者的学号
-\advisor{岳不群} %指导老师的亲笔签名
-\date{成化五年} %论文小组评阅或答辩日期
+\title{气候变化影响农业金融风险的传导路径--基于江苏省各县的微观气象数据} %论文题名，论文的正标题
+\author{唐馨乐} %论文作者姓名
+\school{统计学院} %论文作者所在学院的全称
+\field{\ 统计学} %论文作者所学专业的全称；相关专业名称过长的请在文字前添加命令\ziju{-0.15}
+\studentid{2021103745} %论文作者的学号
+\advisor{肖争艳} %指导老师的亲笔签名
+\date{2024年3月31日} %论文小组评阅或答辩日期
 
 
 % 以下本科填写
@@ -42,12 +56,12 @@
 
 
 %以下研究生填写
-\etitle{How to make a lot of money}%英文题目
-\keywords{\TeX{}}%论文主题词
+\etitle{Transmission Pathways of Climate Change Impacts on Agricultural Financial Risks: Based on Micro-Meteorological Data from Counties in Jiangsu Province}%英文题目
+\keywords{气候变化；农业金融风险；传导路径；SVAR}%论文主题词
 
 %摘要关键词：本科研究生都需要填写！
-\keywordzh{中文摘要关键词} %中文摘要关键词，词间间隔3格，用{ }{ }{ }实现，方法不唯一
-\keyworden{English\qquad template} %外文摘要关键词，互相之间间隔3格
+\keywordzh{气候变化；农业金融风险；传导路径；SVAR} %中文摘要关键词，词间间隔3格，用{ }{ }{ }实现，方法不唯一
+\keyworden{Climate Change\qquad Agricultural Financial Risk\qquad Transmission Pathways\qquad SVAR} %外文摘要关键词，互相之间间隔3格
 
 
 %
@@ -57,9 +71,9 @@
 \maketitle
 
 %独创性声明
-%\originality %本科不需要
+\originality %本科不需要
 %授权书在这插入
-%\authorization{figures/shouquan.png} %本科不需要
+\authorization{figures/shouquan.png} %本科不需要
 %中文摘要
 \include{format/cabstractpage}
 %英文摘要
@@ -86,7 +100,7 @@
 \input{chap/chapter4} %要插入本科签名的最后一个章节,插入命令使用\input{}
 
 %本科签名
-\autograph
+% \autograph
 
 %参考文献
 \bibliographystyle{ref/rucbib}
